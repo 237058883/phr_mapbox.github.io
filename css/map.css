@@ -1,0 +1,388 @@
+.top {
+  z-index: 9;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(6, 66, 155, 0.747),
+    rgba(4, 4, 196, 0.007)
+  );
+  flex-direction: row;
+  display: flex;
+}
+
+.title-right {
+  position: relative;
+  top: 0;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.title {
+  background: linear-gradient(to bottom, #ffffff, #b1cdff, #03348f);
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 85%;
+  font-family: "华文琥珀";
+  font-size: 44px;
+  text-align: center;
+  line-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title img {
+  width: 80px;
+  height: 80px;
+}
+
+.cenlender {
+  background-color: #fff;
+  height: 40px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.date {
+  text-align: center;
+  padding: 0 10px 0;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-item {
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  margin: 0 10px 0;
+  line-height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+  background: linear-gradient(to top, #a3c0ff, #a3c0ff) left top no-repeat,
+    /*上左*/ linear-gradient(to right, #a3c0ff, #a3c0ff) left top no-repeat,
+    /*左上*/ linear-gradient(to left, #a3c0ff, #a3c0ff) right top no-repeat,
+    /*上右*/ linear-gradient(to bottom, #a3c0ff, #a3c0ff) right top no-repeat,
+    /*上右*/ linear-gradient(to left, #a3c0ff, #a3c0ff) left bottom no-repeat,
+    /*下左*/ linear-gradient(to bottom, #a3c0ff, #a3c0ff) left bottom no-repeat,
+    /*左下*/ linear-gradient(to top, #a3c0ff, #a3c0ff) right bottom no-repeat,
+    /*下右*/ linear-gradient(to left, #a3c0ff, #a3c0ff) right bottom no-repeat;
+  /*右下*/
+  background-size: 2px 10px, 10px 2px, 2px 10px, 10px 2px;
+  background-color: rgba(0, 89, 253, 0.534);
+}
+
+.nav-item-active {
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  margin: 0 10px 0;
+  line-height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+  background: linear-gradient(to top, #a3c0ff, #a3c0ff) left top no-repeat,
+    /*上左*/ linear-gradient(to right, #a3c0ff, #a3c0ff) left top no-repeat,
+    /*左上*/ linear-gradient(to left, #a3c0ff, #a3c0ff) right top no-repeat,
+    /*上右*/ linear-gradient(to bottom, #a3c0ff, #a3c0ff) right top no-repeat,
+    /*上右*/ linear-gradient(to left, #a3c0ff, #a3c0ff) left bottom no-repeat,
+    /*下左*/ linear-gradient(to bottom, #a3c0ff, #a3c0ff) left bottom no-repeat,
+    /*左下*/ linear-gradient(to top, #a3c0ff, #a3c0ff) right bottom no-repeat,
+    /*下右*/ linear-gradient(to left, #a3c0ff, #a3c0ff) right bottom no-repeat;
+  /*右下*/
+  background-size: 2px 10px, 10px 2px, 2px 10px, 10px 2px;
+  background-color: #fdc03eb0;
+}
+
+.right-list {
+  width: 500px;
+  height: 740px;
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to right,
+    rgba(11, 10, 80, 0.027) 5%,
+    rgba(10, 66, 187, 0.685)
+  );
+}
+
+.right-list-title {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.right-list-title span {
+  padding-left: 60px;
+}
+.right-list-title-click {
+  color: rgb(255, 215, 38);
+  text-decoration: underline;
+}
+
+.loading {
+  margin-left: 100px;
+  padding-top: 40px;
+}
+
+.loading-title {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+.loading-item1 {
+  padding-left: 50px;
+  cursor: pointer;
+}
+.loading-item2 {
+  padding-left: 90px;
+  cursor: pointer;
+}
+.paintting {
+  color: rgb(103, 174, 255);
+  padding-left: 20%;
+  height: 20px;
+  display: flex;
+}
+
+.paintting img {
+  width: 20px;
+  height: 20px;
+}
+.right-list-middle {
+  flex-direction: row;
+  display: flex;
+  color: #ffffff;
+}
+.right-list-middle img {
+  width: 18px;
+  height: 18px;
+}
+.middle-item {
+  width: 35%;
+  padding-left: 40px;
+  height: 100px;
+}
+.middle-item-context {
+  padding-left: 10px;
+  margin-left: 70px;
+  margin-top: 10px;
+  width: 60%;
+  height: 80px;
+  border-left: 1px white solid;
+}
+.item-context {
+  color: rgb(162, 252, 255);
+  background-color: rgb(81, 95, 97);
+  margin-top: 5px;
+  padding-left: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+.chart {
+  width: 350px;
+  height: 300px;
+  padding-left: 20%;
+  padding-top: 15px;
+}
+
+.left-list {
+  width: 460px;
+  height: 720px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.area {
+  width: 360px;
+  height: 280px;
+  background: linear-gradient(to top, #a3c0ff, #a3c0ff) left top no-repeat,
+    /*上左*/ linear-gradient(to right, #a3c0ff, #a3c0ff) left top no-repeat,
+    /*左上*/ linear-gradient(to left, #a3c0ff, #a3c0ff) right top no-repeat,
+    /*上右*/ linear-gradient(to bottom, #a3c0ff, #a3c0ff) right top no-repeat,
+    /*上右*/ linear-gradient(to left, #a3c0ff, #a3c0ff) left bottom no-repeat,
+    /*下左*/ linear-gradient(to bottom, #a3c0ff, #a3c0ff) left bottom no-repeat,
+    /*左下*/ linear-gradient(to top, #a3c0ff, #a3c0ff) right bottom no-repeat,
+    /*下右*/ linear-gradient(to left, #a3c0ff, #a3c0ff) right bottom no-repeat;
+  /*右下*/
+  background-size: 2px 18px, 18px 2px, 2px 18px, 18px 2px;
+  background-color: rgba(6, 57, 153, 0.692);
+  display: flex;
+  flex-direction: column;
+}
+.pick-area {
+  color: #fdbf3e;
+  width: 100%;
+  border-bottom: 1px rgba(121, 179, 255, 0.808) solid;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+.pick-area img {
+  padding-left: 30px;
+  padding-right: 5px;
+}
+.pick-area img {
+  width: 16px;
+  height: 16px;
+}
+.select-area {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px rgba(121, 179, 255, 0.808) dashed;
+}
+.select-area img {
+  width: 12px;
+  height: 12px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.select-area-title {
+  color: #1296db;
+}
+.province {
+  color: #89d0f7;
+  padding-left: 65px;
+  padding-top: 10px;
+}
+.province-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.province-list div {
+  width: 50%;
+  height: 55px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "黑体";
+}
+.left-list-bottom {
+  flex-direction: row;
+  position: absolute;
+  width: 360px;
+  height: 200px;
+  bottom: 0;
+  display: flex;
+}
+.legend {
+  width: 120px;
+  height: 180px;
+  background-color: rgba(116, 116, 116, 0.336);
+  padding-left: 15px;
+  color: #fff;
+  border: 1px white solid;
+  padding-top: 5px;
+}
+.legend img {
+  width: 16px;
+  height: 16px;
+}
+.mapstyle {
+  width: 100%;
+  height: 180px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+#stree {
+  margin-top: 60px;
+  background-color: green;
+  width: 120px;
+  height: 30px;
+  padding-top: 10px;
+  background-color: rgba(4, 48, 131, 0.986);
+  border: 1px rgba(93, 151, 226, 0.808) solid;
+  border-radius: 6px 6px 6px;
+  cursor: pointer;
+}
+#web {
+  margin-top: 5px;
+  padding-top: 10px;
+  background-color: darkgreen;
+  width: 120px;
+  height: 30px;
+  background-color: rgba(4, 48, 131, 0.986);
+  border: 1px rgba(93, 151, 226, 0.808) solid;
+  border-radius: 6px 6px 6px;
+  cursor: pointer;
+}
+.click-mapstyle {
+  color: rgb(255, 215, 38);
+  box-shadow: 0px -2px 10px 0px #a5dbff46, -2px 0px 10px 0px #a5dbff46,
+    2px 0px 10px 0px #a5dbff4d, 0px 2px 10px 0px #a5dbff49;
+}
+.unclick-mapstyle {
+  color: rgb(255, 255, 255);
+}
+
+.bottom-list {
+  color: #1296db;
+  width: 380px;
+  height: 80px;
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(4, 48, 131, 0.986);
+  border-top: 1px rgba(93, 151, 226, 0.808) solid;
+  border-left: 1px rgba(93, 151, 226, 0.808) solid;
+  border-right: 1px rgba(93, 151, 226, 0.808) solid;
+  cursor: pointer;
+  padding-top: 10px;
+}
+.bottom-list-item {
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
